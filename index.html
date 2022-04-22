@@ -801,22 +801,22 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form">
-                            <form>
+                            <form method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Votre Nom" />
+                                        <input type="text" class="form-control" id="name" placeholder="Votre Nom" />
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" placeholder="Votre Prénom" />
+                                        <input type="email" class="form-control" id="email" placeholder="Votre Email" />
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Sujet" />
+                                    <input type="text" class="form-control" id="subject" placeholder="Sujet" />
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                    <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
                                 </div>
-                                <div><button type="submit">Envoyer</button></div>
+                                <div><button type="submit" id="btn">Envoyer</button></div>
                             </form>
                         </div>
                     </div>
@@ -855,5 +855,7 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script src="js/mail.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>
